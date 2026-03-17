@@ -1,4 +1,4 @@
-# 👋 Привет!
+# Debugging for three hours — turned out to be the wrong server
 
 ---
 
@@ -29,15 +29,29 @@ class Developer:
 
 ---
 
-## 🐍 Анимация активности
+## Activity
 
 ![Snake Animation](https://raw.githubusercontent.com/yuaotian/yuaotian/refs/heads/output/github-contribution-grid-snake.svg)
 
 ---
 
-## 🎯 Планы
+## Plans
 
-- Учиться.
-- Создать несколько open-source проектов.
+- Keep learning.
+- Build a few open-source projects.
 
-> "Всё возможно"
+> "Anything is possible"
+
+---
+
+```python
+# current_session.py
+while debugging:
+    check(server)           # ✓
+    check(code)             # ✓
+    check(env)              # ✓
+    server = get_server()   # ... wait.
+    if server != target_server:
+        print("three hours later...")  # 💀
+        break
+```
